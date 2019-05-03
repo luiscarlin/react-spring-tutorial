@@ -1,12 +1,16 @@
 import React from "react";
 import { useSpring, animated } from "react-spring";
-import "./basic-spring.css";
+import "./fade-in.css";
+
+/**
+ * Fade In:
+ * - when mounting, start with opacity = 0 and move to opacity = 1
+ * - need to use animated wrapper (like styled component)
+ * - you can wrap as many components as you want and they'll get animated together
+ */
 
 export default () => {
-  const fade = useSpring({
-    from: { opacity: 0 },
-    to: { opacity: 1 }
-  });
+  const fade = useSpring({ from: { opacity: 0 }, opacity: 1 });
 
   return (
     <animated.div style={fade}>
