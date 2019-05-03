@@ -2,3 +2,16 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+.card-container {
+  display: flex;
+}
+
+.card {
+  width: 500px;
+  height: 300px;
+  background-color: SteelBlue;
+  padding: 10px;
+  color: white;
+  margin: 30px;
+}

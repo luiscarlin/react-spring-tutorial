@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import FadeIn from "./FadeIn";
+import Toggle from "./Toggle";
 
 import "./styles.css";
 
@@ -8,7 +9,10 @@ function App() {
   return (
     <div className="App">
       <h1>React Spring Tutorial</h1>
-      <FadeIn />
+      <div className="card-container">
+        <FadeIn />
+        <Toggle />
+      </div>
     </div>
   );
 }
