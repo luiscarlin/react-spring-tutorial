@@ -8,7 +8,7 @@ import "./styles.css";
 function App() {
   return (
     <div className="App">
-      <h1>React Spring Tutorial</h1>
+      <h1 className="title">React Spring Tutorial</h1>
       <div className="card-container">
         <FadeIn />
         <Toggle />
